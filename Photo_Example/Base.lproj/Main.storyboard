@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ab-Ac-fDS">
+                                <rect key="frame" x="50" y="282" width="200" height="35"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.66666666669999997" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BaI-Mc-Wph"/>
+                                </constraints>
+                                <state key="normal" title="添加文件">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addFiles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzA-ae-ogj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voB-NH-Cgs">
+                                <rect key="frame" x="350" y="282" width="200" height="35"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.66666666669999997" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删除文件">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k9H-FT-umY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="voB-NH-Cgs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3MM-9k-k3z"/>
+                            <constraint firstItem="voB-NH-Cgs" firstAttribute="height" secondItem="4ab-Ac-fDS" secondAttribute="height" id="FH9-U2-F0X"/>
+                            <constraint firstItem="voB-NH-Cgs" firstAttribute="width" secondItem="4ab-Ac-fDS" secondAttribute="width" id="HXk-m0-IXz"/>
+                            <constraint firstItem="voB-NH-Cgs" firstAttribute="leading" secondItem="4ab-Ac-fDS" secondAttribute="trailing" constant="100" id="LDm-7I-s40"/>
+                            <constraint firstAttribute="trailing" secondItem="voB-NH-Cgs" secondAttribute="trailing" constant="50" id="QQW-OE-FfS"/>
+                            <constraint firstItem="4ab-Ac-fDS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RnP-aP-NiT"/>
+                            <constraint firstItem="4ab-Ac-fDS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="yGZ-4v-nvr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="415"/>
+        </scene>
+    </scenes>
+</document>
